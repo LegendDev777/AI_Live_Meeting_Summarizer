@@ -25,13 +25,15 @@ The following dependencies support the AI/ML pipeline and audio handling:
 | librosa | Audio processing and analysis. |
 
 ## Comparison
-Feature	Whisper (Medium)	Vosk
-Architecture	Transformer-based (Encoder-Decoder)	Kalman Filter & Neural Network (WFST)
-Word Error Rate (WER)	0.26 (Highly accurate after preprocessing)	Generally higher in noisy environments
-Hardware	Optimized for CUDA/GPU	Optimized for CPU and mobile
-Transcription Quality	Excellent context retention	Fast, but lacks deep contextual nuance
-Processing Time	Slower (requires GPU for real-time)	Extremely fast (Low latency)
+## 📊 Whisper vs Vosk Comparison
 
+| Feature | Whisper (Medium) | Vosk |
+|----------|------------------|-------|
+| **Architecture** | Transformer-based (Encoder-Decoder) | Kalman Filter + Neural Network (WFST) |
+| **Word Error Rate (WER)** | 0.26 (Highly accurate after preprocessing) | Generally higher in noisy environments |
+| **Hardware** | Optimized for CUDA / GPU | Optimized for CPU and mobile devices |
+| **Transcription Quality** | Excellent context retention | Fast, but lacks deep contextual nuance |
+| **Processing Time** | Slower (requires GPU for real-time) | Extremely fast (Low latency) |
 ## Evaluation & Results
 After testing both models on the sample_3min.wav dataset, I selected the Whisper medium model for the final implementation:
 
