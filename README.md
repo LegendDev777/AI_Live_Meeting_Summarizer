@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project: Live Meeting Summarizer
 
 ## Overview
@@ -48,3 +49,7 @@ Device Optimization: Using device="cuda" allowed the medium model to handle live
 2. Install dependencies: pip install openai-whisper torch transformers pyaudio nltk librosa
 3. Ensure CUDA is available for the device="cuda" setting.
 4. Execute the main script to start live summarization.
+=======
+# AI_Live_Meeting_Summarizer
+Real-time Speech-to-Text meeting summarizer using Whisper &amp; Vosk with WER evaluation and CPU vs GPU benchmarking.
+>>>>>>> f385a6865ddda81a8307d9885159e4f88f070520
